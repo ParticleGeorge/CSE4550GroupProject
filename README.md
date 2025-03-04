@@ -1,4 +1,3 @@
-// Need to make header file and definiton files. Last will be GUI. 
 // Solution synthesis
 
 Parameters - first name, last name, sex, age, major, address, student ID (ID is maybe given here instead?) // must be normalized tables

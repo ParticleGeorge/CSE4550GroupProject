@@ -1,6 +1,6 @@
 // Solution synthesis
 
-Parameters - first name, last name, sex, age, major, address, student ID (ID is maybe given here instead?) // must be normalized tables
+Parameters - first name, last name, sex, age, major, address(to make things easier ill just add county), student ID (ID is maybe given here instead?) // must be normalized tables
 Main menu - add, delete, edit, search
 Add - must ask for every parameter and receive everything. Generate student ID?
 Delete -

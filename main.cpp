@@ -4,9 +4,9 @@
 #include "functions.h"
 
 int main () {
-    std::string choice;  // change to string to allow 'q' input
-    StudentAdd studentDefault;
-    std::string firstName, lastName;
+    std::string choice;
+    std::string innerChoice;  // change to string to allow 'q' input
+    std::vector<Student> studentList;
 
     // start the loop that continues until 'q' is entered
     do {
@@ -20,16 +20,19 @@ int main () {
         std::cout << "Enter your choice (1-5) or 'q' to quit: ";
         std::cin >> choice;
 
+        //
+        //
+        //
+        //
+        // WORKING here vvvvvv
+
+
+
         if (choice == "1") {
             // adding all basic stuff
-            std::cout << "Please fill out the following fields\n";
-            std::cout << "Enter First Name: ";
-            std::cin >> firstName;
-            std::cout << "Enter Last Name: ";
-            std::cin >> lastName;
-
-            // add the student to the vector 
-            studentDefault.addStudent(firstName, lastName); 
+            //do{ 
+                addStudent(studentList);
+            // } while (innerChoice != "b");  
         } 
         else if (choice == "2") {
             
@@ -41,28 +44,14 @@ int main () {
             
         }
         else if (choice == "5") {
-            // Display all students in the vector
-            studentDefault.printStudents();
+            // sisplay all students in the vector
+            displayAllStudents(studentList);
         }
         else if (choice != "q") {
             std::cout << "Invalid option. Please choose between 1-5 or 'q' to quit.\n";
         }
 
     } while (choice != "q");  
-
-   
-    /*
-    std::string firstName, lastName;
-    std::cout << "Please enter First Name:\n";
-    std::cin >> firstName;
-    std::cout << "Please enter Last Name:\n";
-    std::cin >> lastName;
-
-    
-    // still need to make menu but getting classes for add done
-    
-    student.addFirstName(firstName);
-    */
 
     return 0; 
 

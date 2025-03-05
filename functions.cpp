@@ -1,19 +1,19 @@
 #include "functions.h"
 
+// getters for displayStudent
+std::string Student::getFirstName() const { return firstName; }
+std::string Student::getLastName() const { return lastName; }
+int Student::getAge() const { return get; }
+
 // constructor definition
 Student::Student(const std::string& first = "Unknown", const std::string& last = "Unknown", const int& ageNumber = 0)
     : firstName(first), lastName(last), age(ageNumber){}
 
 // display student details
 void Student::displayStudent() const {
-    std::cout << "Student Name: " << firstName << " " << lastName << std::endl;
-    std::cout << "Age: " << age << std::endl;
+    std::cout << "Student Name: " << getFirstName << " " << getLastName << std::endl;
+    std::cout << "Age: " << getAge << std::endl;
 }
-
-// getters
-std::string Student::getFirstName() const { return firstName; }
-std::string Student::getLastName() const { return lastName; }
-int Student::getAge() const { return 0; }
 
 // add student to vector
 void addStudent(std::vector<Student>& students) {

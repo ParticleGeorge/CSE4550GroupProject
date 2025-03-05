@@ -4,6 +4,7 @@
 
 int main (){
     // rudimentary framework
+    // testing gitlens of VScode, will remove this comment
     std::string firstName, lastName;
     
     std::cout << "Welcome to CSUSB Student Registration\n" << "Please make a selection\n";

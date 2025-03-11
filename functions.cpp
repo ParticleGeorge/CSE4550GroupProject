@@ -66,3 +66,13 @@ void displayAllStudents(const std::vector<Student>& students) {
         student.displayStudent();
     }
 }   
+
+//delete student from vector
+void deleteStudent(std::vector<Student>& students) {
+    /* todo: need to add a way to delete any number of students without using
+    specific place in vector.
+    ideas: by name, studentID
+    Do we need to update student ID's as students get removed?*/
+
+    std::cout << "Student(s) deleted successfully.";
+}

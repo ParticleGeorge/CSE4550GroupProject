@@ -35,6 +35,9 @@ int main () {
             // } while (innerChoice != "b");  
         } 
         else if (choice == "2") {
+           /*  do{
+                //code
+            } while (innerChoice != "b"); */
             
         } 
         else if (choice == "3") {

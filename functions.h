@@ -32,6 +32,7 @@ public:
 
 // Function prototypes
 void addStudent(std::vector<Student>& students);
+void deleteStudent(std::vector<Student>& students);
 void displayAllStudents(const std::vector<Student>& students);
 
 #endif  
